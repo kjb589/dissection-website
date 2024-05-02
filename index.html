@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- UPDATE TITLE : <Your Name's> Portfolio  -->
+  <title> ANC Headphones Dissection</title>
+
+  <!-- ADD LINKS TO YOUR CSS STYLE SHEETS HERE -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+
+<body>
+  <!-- TODO : FOLLOW THE TUTORIAL AND CREATE YOUR SITE -->
+  <nav id="desktop-nav">
+    <div class="logo">Dissection</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#experience">Operation Analysis</a></li>
+        <li><a href="#projects">Product Analysis</a></li>
+        <li><a href="#contact">Reassembly</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Dissection</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Operation Analysis</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Product Analysis</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Reassembly</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="KJ Butler profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1>KJ Butler</h1>
+      <p class="section__text__p2">Computer Engineer</p>
+      <p class="section__text">
+        For my dissection project, I took apart a pair of wireless active noice cancelling (ANC) headphones. This website is 
+        my dissection journal which documents each step of the dissection with a photo journal, a bill of materials for both 
+        electrical and non-electrical components, and diagrams outlining the circuitry and operation of the headphones.
+      </p>
+      <div id="socials-container">
+        <img 
+          src="./assets/linkedin.png" 
+          alt="My LinkedIn profile"
+          class="icon" 
+          onclick="location.href='https://linkedin.com/in/kj-butler/'"
+        />
+        <img 
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/kjb589/'"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="product">
+    <p class="section__text__p1">Product Market and Retail Info</p>
+    <h1 class="title">KVIDIO ANC Wireless Headphones WH304B</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assets/KVIDIO.png"
+          alt="Product image"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img 
+              src="./assets/battery.png" 
+              alt="Battery icon"
+              class="icon"
+            />
+            <h3>Long Battery Life</h3>
+            <p><nobr>65 Hours (ANC mode off)</nobr><br /><nobr>40 Hours (ANC mode on)</nobr></p>
+          </div>
+          <div class="details-container">
+            <img 
+              src="./assets/ANC.png" 
+              alt="ANC icon"
+              class="icon"
+            />
+            <h3>ANC Modes</h3>
+            <p><nobr>Active Noise Cancelling</nobr><br />Transparency</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            LOReM IPSUM
+          </p>
+        </div>
+      </div>
+    </div>
+    <img 
+      src="./assets/arrow.png" 
+      alt="icon arrow"
+      onclick="location.href='./experience'"
+    />
+  </section>
+
+  <!-- ADD THE LINK TO YOUR SCRIPT HERE -->
+  <script src="script.js"></script>
+</body>
+
+</html>
