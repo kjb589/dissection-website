@@ -398,6 +398,11 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
+video {
+    height: 20rem;
+    border-radius: 2rem;
+}
+
 
 /* REASSEMBLY */
 
