@@ -20,7 +20,6 @@
     <div class="logo">Dissection</div>
     <div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#photo-journal">Photo Journal</a></li>
         <li><a href="#operation">Operation</a></li>
@@ -38,7 +37,6 @@
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
         <li><a href="#product" onclick="toggleMenu()">Product</a></li>
         <li><a href="#photo-journal" onclick="toggleMenu()">Photo Journal</a></li>
         <li><a href="#operation" onclick="toggleMenu()">Operation</a></li>
@@ -85,6 +83,7 @@
       </div>
     </div>
   </section>
+
   <section id="product">
     <p class="section__text__p1">Product History and Retail Info</p>
     <h1 class="title">KVIDIO ANC Headphones WH304B</h1>
@@ -93,11 +92,11 @@
         <img
           src="./assets/KVIDIO.png"
           alt="Product image"
-          class="about-pic"
+          class="product-img"
         />
       </div>
-      <div class="about-details-container">
-        <div class="about-containers">
+      <div class="product-details-container">
+        <div class="product-containers">
           <div class="details-container">
             <img 
               src="./assets/battery.png" 
@@ -141,146 +140,270 @@
         </div>
       </div>
     </div>
-  </section>
-  <section id="photo-journal">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>Javascript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>Material UI</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>SASS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>PostgresSQL</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>Node JS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>Express JS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img 
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon" 
-              />
-              <div>
-                <h3>Git</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
     <img
       src="./assets/arrow.png" 
       alt="Arrow icon"
       class="icon arrow"
-      onclick="location.href='./#projects'"
+      onclick="location.href='./#photo-journal'"
     />
   </section>
+
+  <section id="photo-journal">
+    <p class="section__text__p1">View My</p>
+    <h1 class="title">Photo Journal</h1>
+    <div class="photo-journal-details-container">
+      <div class="product-containers">
+        <div class="article-container">
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/1-front_box.jpeg"
+                alt="Unopened box (front)"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Unopened box (front)</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/2-back_box.jpeg"
+                alt="Unopened box (back)"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Unopened box (back)</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/3-unboxed.jpeg"
+                alt="Unboxed contents"
+                class="image"
+              />
+              <div class="project-title">
+                <p>Box contents</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/4-manual.jpeg"
+                alt="User Manual"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>User Manual</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/5-charging_red.jpeg"
+                alt="Headphones charging"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Red LED means charging</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/6-charging_blue.jpeg"
+                alt=""
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Blue LED means charged</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/7-dsxn1.jpeg"
+                alt="Screws removed"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Screws & earmuffs removed</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/8-Lmuff.jpeg"
+                alt="Left Earmuff"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Left earmuff</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/9_Rmuff.jpeg"
+                alt="Right Earmuff"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Right earmuff</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/10-dsxn2.jpeg"
+                alt="circuitry and audio driver"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Circuitry and audio drivers</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/11-battey_close.jpeg"
+                alt="Close-up of battery"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Close-up of battery</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/12-gled_on.jpeg"
+                alt="Green LED on"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Green LED means On</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/13-dsxn3.jpeg"
+                alt="Battery out of place"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Battery removed</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/14-Lpcb.jpeg"
+                alt="Left side pcb"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Left side PCB</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/15-Rpcb.jpeg"
+                alt="Right side PCB (top)"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Right side PCB (top)</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/16-Rpcb2.jpeg"
+                alt="Right side PCB (bottom)"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Right side PCB (bottom)</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/17-MCU.jpeg"
+                alt="Close-up of MCU"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>MCU and crystal oscillator</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/18-antenna.jpeg"
+                alt="Bluetooth® RF antenna"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Bluetooth® RF antenna</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/19-battery.jpeg"
+                alt="3.7-V Battery"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>3.7-V LiPO battery</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/20-Vbattery.jpeg"
+                alt="Battery Voltage measurement"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Battery Voltage measurement</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="operation">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
+      <div class="product-containers">
         <div class="details-container color-container">
           <div class="article-container">
             <img
@@ -289,7 +412,7 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="project-sub-title project-title">Project One</h2>
           <div class="btn-container">
             <button 
               class="btn btn-color-2 project-btn" 
@@ -313,7 +436,7 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <h2 class="project-sub-title project-title">Project Two</h2>
           <div class="btn-container">
             <button 
               class="btn btn-color-2 project-btn" 
@@ -337,7 +460,7 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <h2 class="project-sub-title project-title">Project Three</h2>
           <div class="btn-container">
             <button 
               class="btn btn-color-2 project-btn" 
@@ -355,16 +478,12 @@
         </div>
       </div>
     </div>
-    <img 
-      src="./assets/arrow.png" 
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
   </section>
+
   <section id="analysis">
 
   </section>
+
   <section id="reassembly">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
@@ -391,7 +510,6 @@
     <nav>
       <div class="nav-links-container">
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#product">Product</a></li>
           <li><a href="#photo-journal">Photo Journal</a></li>
           <li><a href="#operation">Operation</a></li>

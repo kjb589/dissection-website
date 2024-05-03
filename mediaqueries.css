@@ -12,16 +12,16 @@
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers {
+    .product-containers {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 1200px){
-    #photo-journal, .experience-details-container {
+    #photo-journal, .photo-journal-details-container {
         margin-top: 2rem;
     }
-    #profile, .section-container {
+    #home, .section-container {
         display: block;
     }
     .arrow {
@@ -38,16 +38,16 @@
         height: 275px;
         margin: 0 auto 2rem;
     }
-    .about-containers {
+    .product-containers {
         margin-top: 0;
     }
 }
 
 @media screen and (max-width: 600px){
-    #contact, footer {
+    #reassembly, footer {
         height: 40vh;
     }
-    #profile {
+    #home {
         height: 83vh;
         margin-bottom: 0;
     }
@@ -58,7 +58,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers,
+    .product-containers,
     .contact-info-upper-container, 
     .btn-container {
         flex-wrap: wrap;
@@ -70,7 +70,7 @@
     .nav-links li a {
         font-size: 1rem;
     }
-    .experience-sub-title {
+    .project-sub-title {
         font-size: 1.25rem;
     }
     .logo {
