@@ -375,6 +375,7 @@ article .icon {
 
 #operation {
     position: relative;
+    height: auto;
 }
 
 .color-container {
@@ -403,6 +404,38 @@ video {
     border-radius: 2rem;
 }
 
+.hmi-diagram {
+    height: 400px;
+    width: 440px;
+    margin: auto 0;
+}
+
+/* PRODUCT ANALYSIS */
+
+#analysis {
+    position: relative;
+    height: auto;
+}
+
+.mcu-img {
+    border-radius: 2rem;
+    border: black 0.1rem solid;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    order: black 0.1rem solid;
+}
+
+th, td{
+    border: black 0.1rem solid;
+    padding: 8px 4px;
+}
+
+thead {
+    background-color: rgb(163, 163, 163);
+}
 
 /* REASSEMBLY */
 

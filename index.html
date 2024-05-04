@@ -134,18 +134,13 @@
             <strong>KVIDIO's WH304B</strong> model is an affordable pair of headphones offering comfort, versatility, and disturbance-free
             listening. The sound quality of these headphones can not compete against more popular, expensive brands 
             like Bose®, Apple, or Sony, but for an MSRP of just $20, they have a lot to offer.<br>
-            KVIDIO has other affordable ANC headphones option such as the WH304A, and the sister brand BERIBES offers a near identical pair in the WH305A. Both headphones can be 
-            found at Amazon, and both brands have Amazon storefronts as well. 
+            KVIDIO has other affordable ANC headphones option such as the WH304A, and the sister brand BERIBES offers a 
+            near identical pair in the WH305A. Both headphones can be found at Amazon, and both brands have Amazon 
+            storefronts as well. 
           </p>
         </div>
       </div>
     </div>
-    <img
-      src="./assets/arrow.png" 
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#photo-journal'"
-    />
   </section>
 
   <section id="photo-journal">
@@ -400,8 +395,60 @@
   </section>
 
   <section id="operation">
-    <p class="section__text__p1">Demonstrating</p>
+    <p class="section__text__p1">Product</p>
     <h1 class="title">Operation</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assets/hmi.png"
+          alt="HMI diagram"
+          class="hmi-diagram"
+        />
+      </div>
+      <div class="product-details-container">
+        <div class="product-containers">
+          <div class="details-container">
+            <h3>Inputs</h3>
+            <p>
+              <ul style="list-style-type: none;">
+                <li>Power Button (SPST)</li>
+                <li>Volume +/- Buttons (SPST)</li>
+                <li>ANC Button (SPST)</li>
+                <li>3.5mm Audio Jack</li>
+                <li>USB-C Port</li>
+              </ul>
+            </p>
+          </div>
+          <div class="details-container">
+            <h3>Outputs</h3>
+            <p>
+              <ul style="list-style-type: none;">
+                <li>Blue LED</li>
+                <li>Green LED</li>
+                <li>Red LED</li>
+                <li>40mm 32&#937 Audio Speakers</li>
+                <li></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Powering the headphones is a 3.7V LiPO battery which supplies 660mAh of current and 2.44mWh of power. There 
+            is a USB-C charging port for when the battery gets low. To use the headphones, there are four buttons (SPST 
+            switches): power, volume up, volume down, and ANC. Other inputs include a 3.5mm audio jack which can be 
+            used to play audio from a connected device via 3.5mm aux cable. They have a Bluetooth® RF antenna to connect 
+            wirelessly to playback devices. <br>
+            The two 40mm audio drivers each receive audio signals from the DAC via two PCB connections: FBL (Full-
+            Bandwidth Line) and S (SR for stereo right, SL for stereo left). Audio drivers receive electrical energy and 
+            generate sound by moving air. The videos below demonstrate each driver playing a sinusoidal signal supplied 
+            by a waveform generator. The frequency of the waveform determines the pitch, and V<sub>RMS</sub> sets the volume.
+            <br><strong>(WARNING: Lower volume before listening)</strong>
+
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="experience-details-container">
       <div class="product-containers">
         <div class="details-container color-container">
@@ -410,7 +457,7 @@
               <source src="./assets/700Hz.mp4" type="video/mp4">
             </video>
           </div>
-          <h2 class="project-sub-title project-title">700Hz sinusoidal waveform through left audio driver</h2>
+          <h2 class="project-sub-title project-title">700Hz sinusoid through Full-Frequency Left connection</h2>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
@@ -418,43 +465,92 @@
               <source src="./assets/10kHz.mp4" type="video/mp4">
             </video>
           </div>
-          <h2 class="project-sub-title project-title">10kHz sinusoidal waveform through right audio driver</h2>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="project-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button 
-              class="btn btn-color-2 project-btn" 
-              onclick="location.href='https://github.com/'"
-            >
-            Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
+          <h2 class="project-sub-title project-title">10kHz sinusoid through Full-Frequency Right connection</h2>
         </div>
       </div>
     </div>
   </section>
 
   <section id="analysis">
-
+    <p class="section__text__p1">Product</p>
+    <h1 class="title">Analysis</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assets/MCU.png"
+          alt="MCU Diagram"
+          class="mcu-img"
+        />
+      </div>
+      <div class="product-details-container">
+        <div class="text-container">
+          <p>
+            The microcontroller used in the WH304B's family of headphones is the JL7018F. It is a 40 pin microcontroller 
+            developed by Jieli Technology Co. The MCU has a maximum speed of 160MHz, 8 interrupt priority levels, 640kB of 
+            SRAM, on-chip clock rate of 16MHz, operating temperature range from -40ºC to 85ºC, 24-bit DAC, 24-bit ADC, 10-
+            bit ADC, UART interface, I2C interface, Bluetooth v5.3 support, and an ANC processing engine with up to 750kHz 
+            sample rate. Some of the pins explained:<br>
+          </p> <br>
+          <table>
+            <thead>
+              <tr>
+                <th>Pin #</th>
+                <th>Name</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>DACRN</td>
+                <td>
+                  DAC Right Negative Channel
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>DACLN</td>
+                <td>
+                  DAC Left Negative Channel
+                </td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>DACLP</td>
+                <td>
+                  DAC Left Positive Channel
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>VBAT</td>
+                <td>
+                  Power supply from connected battery
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>VPWR</td>
+                <td>
+                  Charging Power Input
+                </td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>BTRF</td>
+                <td>
+                  Interface to Bluetooth® RF Antenna
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
   </section>
 
   <section id="reassembly">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
+    <p class="section__text__p1">Now it's time for</p>
+    <h1 class="title">Reassembly</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img
