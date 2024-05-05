@@ -428,13 +428,43 @@ table{
     order: black 0.1rem solid;
 }
 
-th, td{
+th,
+td{
     border: black 0.1rem solid;
-    padding: 8px 4px;
+    padding: 8px 10px;
 }
 
-thead {
+thead,
+tfoot {
     background-color: rgb(163, 163, 163);
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: center;
+}
+
+.bill-of-materials-details-container {
+    flex: 1;
+    padding-top: 2rem;
+    width: 96%;
+}
+
+.bill-sub-title {
+    text-align: center;
+    color: rgb(85,85,85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.bill-title {
+    margin: 1rem;
+    color: black;
 }
 
 /* REASSEMBLY */

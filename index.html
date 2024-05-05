@@ -449,7 +449,7 @@
         </div>
       </div>
     </div>
-    <div class="experience-details-container">
+    <div class="photo-journal-details-container">
       <div class="product-containers">
         <div class="details-container color-container">
           <div class="article-container">
@@ -485,7 +485,10 @@
       <div class="product-details-container">
         <div class="text-container">
           <p>
-            The microcontroller used in the WH304B's family of headphones is the JL7018F. It is a 40 pin microcontroller 
+            The microcontroller used in the WH304B's family of headphones is the JL7018F. The figure on the left and the 
+            following information can also be found in the 
+            <a href="https://www.yufanchip.com/web/uploads/file/20230315/jxp46oYb07jek083g3e82e97KB3LG81Y.pdf" style="color: blue">JL7018F datasheet</a>. 
+            The JL7018F is a 40 pin microcontroller 
             developed by Jieli Technology Co. The MCU has a maximum speed of 160MHz, 8 interrupt priority levels, 640kB of 
             SRAM, on-chip clock rate of 16MHz, operating temperature range from -40ºC to 85ºC, 24-bit DAC, 24-bit ADC, 10-
             bit ADC, UART interface, I2C interface, Bluetooth v5.3 support, and an ANC processing engine with up to 750kHz 
@@ -504,21 +507,28 @@
                 <td>01</td>
                 <td>DACRN</td>
                 <td>
-                  DAC Right Negative Channel
+                  Digital-to-Analog Converter Right Negative Channel.
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>DACRP</td>
+                <td>
+                  Digital-to-Analog Converter Right Positive Channel.
                 </td>
               </tr>
               <tr>
                 <td>03</td>
                 <td>DACLN</td>
                 <td>
-                  DAC Left Negative Channel
+                  Digital-to-Analog Converter Left Negative Channel
                 </td>
               </tr>
               <tr>
                 <td>04</td>
                 <td>DACLP</td>
                 <td>
-                  DAC Left Positive Channel
+                  Digital-to-Analog Converter Left Positive Channel
                 </td>
               </tr>
               <tr>
@@ -539,34 +549,442 @@
                 <td>21</td>
                 <td>BTRF</td>
                 <td>
-                  Interface to Bluetooth® RF Antenna
+                  Interface to Bluetooth® RF Antenna. Connect to wireless device like smartphone or laptop
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
+    </div>
+    <div class="bill-of-materials-details-container">
+      <h2 class="bill-sub-title bill-title">Bill of Materials</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Part</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price per unit</th>
+            <th>Total Price</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Microcontroller</td>
+            <td>JL7018F: 32-bit DSP processor, 8 Mb flash, Bluetooth v5.3, ANC engine, I2C SPI, I2S, UART interfaces, 12-Channel 10-bit ADC, 24 GPIO pins</td>
+            <td>1</td>
+            <td>$3.00 (estimate)</td>
+            <td>$3.00</td>
+            <td>
+              <a href="https://www.yufanchip.com/bluetooth-chip-jl7018f.html">
+                www.yufanchip.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>Rechargeable LiPo battery  3.7V, 2.44 Wh, 660mAh</td>
+            <td>1</td>
+            <td>$3.73</td>
+            <td>$3.73</td>
+            <td>
+              <a href="https://ydlbattery.com/products/ydl-3-7v-660mah-443441-rechargeable-lipo-battery-with-jst-connector?currency=USD&variant=42093629341849&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=a5847882d354&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYUcs9eJtHNv2baL1GSE9mSxyPaE3k783Zeqma5NS6s-ETiHZ-2H29YaAieyEALw_wcB">
+                www.ydlbattery.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Crystal Oscillator</td>
+            <td>24MHz clock</td>
+            <td>1</td>
+            <td>$0.68</td>
+            <td>$0.68</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/abracon-llc/ABM8-24.000MHZ-R60-D1W-T/2184190?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-2184190_sig-Cj0KCQjwudexBhDKARIsAI-GWYX278DjUM1sUmPiX6SxqFozyR5fWV2r-CIhCyRA_WXXRkFD9XMKtPsaAumgEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYX278DjUM1sUmPiX6SxqFozyR5fWV2r-CIhCyRA_WXXRkFD9XMKtPsaAumgEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Pushbuttons</td>
+            <td>SPST push button switches for power, volume, and ANC modes</td>
+            <td>4</td>
+            <td>$0.18</td>
+            <td>$0.72</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/cui-devices/TS04-66-70-BK-260-SMT/15634334?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Low%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20243063506_adg-_ad-__dev-c_ext-_prd-15634334_sig-Cj0KCQjwudexBhDKARIsAI-GWYWmCBo33JNRF_-ur4Pw4SOqcK18kcpe-RyrnvLsGsC4XTiXuhFRhJUaAq09EALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYWmCBo33JNRF_-ur4Pw4SOqcK18kcpe-RyrnvLsGsC4XTiXuhFRhJUaAq09EALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Red LED</td>
+            <td>Red to indicate charging and power off</td>
+            <td>1</td>
+            <td>$0.15</td>
+            <td>$0.15</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060RS75000/4489901">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Green LED</td>
+            <td>Green to indicate on</td>
+            <td>1</td>
+            <td>$0.15</td>
+            <td>$0.15</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060GS75000/4489898">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Blue LED</td>
+            <td>Static Blue for bluetooth pairing mode and full charge, frequently flash blue to indicate bluetooth connected</td>
+            <td>1</td>
+            <td>$0.17</td>
+            <td>$0.17</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060BS75000/4489895">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>3.5mm Audio Cable Jack</td>
+            <td>Input for 3.5mm auxiliary cable, throughhole soldered on PCB</td>
+            <td>1</td>
+            <td>$1.29</td>
+            <td>$1.29</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/cui-devices/SJ2-3593B-SMT-TR/6619605?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Supplier_Focus%20Supplier&utm_term=&utm_content=&utm_id=go_cmp-20243063242_adg-_ad-__dev-c_ext-_prd-6619605_sig-Cj0KCQjwudexBhDKARIsAI-GWYXlwZWHtkP_z-UfU5Y7-UZb1gF_Iy8IMk9UT7SL6S9bJQVzXSoookUaAqDkEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYXlwZWHtkP_z-UfU5Y7-UZb1gF_Iy8IMk9UT7SL6S9bJQVzXSoookUaAqDkEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>USB-C Charging Port</td>
+            <td>USB-C port for charging the battery</td>
+            <td>1</td>
+            <td>$0.81</td>
+            <td>$0.81</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/molex/2171750001/13913766?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Supplier_Focus%20Supplier&utm_term=&utm_content=&utm_id=go_cmp-20243063242_adg-_ad-__dev-c_ext-_prd-13913766_sig-Cj0KCQjwudexBhDKARIsAI-GWYXiaP8_WG9PX31OrlxPAo66XKRQg0YcryK2kz3_E9MCWJvvqpIOI6YaAgqPEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYXiaP8_WG9PX31OrlxPAo66XKRQg0YcryK2kz3_E9MCWJvvqpIOI6YaAgqPEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>40mm Audio Drivers</td>
+            <td>Convert electrical energy into acoustic energy. Impedance: 32&#937</td>
+            <td>1</td>
+            <td>$1.65 (pair)</td>
+            <td>$1.65</td>
+            <td>
+              <a href="https://www.aliexpress.us/item/3256806171364639.html?src=google&aff_fcid=62cd6cf43ba14b04a21b6165c0049c3f-1714250326220-08218-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=62cd6cf43ba14b04a21b6165c0049c3f-1714250326220-08218-UneMJZVf&terminal_id=7e7ab106fd2f425e9f679e870d149eaa&afSmartRedirect=y&gatewayAdapt=glo2usa4itemAdapt">
+                www.aliexpress.us
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Op Amp Transistor</td>
+            <td>Audio signal amplification</td>
+            <td>1</td>
+            <td>$1.39</td>
+            <td>$1.39</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/texas-instruments/OPA316IDBVR/5178336?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-5178336_sig-Cj0KCQjwudexBhDKARIsAI-GWYXBXq-J2bxATKyGEuMBksnN73mXmLJUKvpTBym0OQMRcP7U6mb8sLgaAtJzEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYXBXq-J2bxATKyGEuMBksnN73mXmLJUKvpTBym0OQMRcP7U6mb8sLgaAtJzEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>NPN/PNP Transistor</td>
+            <td>Phase shift oscillator</td>
+            <td>1</td>
+            <td>$0.63</td>
+            <td>$0.63</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/rohm-semiconductor/QS5Y2FSTR/10670898?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-10670898_sig-Cj0KCQjwudexBhDKARIsAI-GWYVSqjPcL7QbcIQUfwOBJpc6fITut3bzHejThgwct5Yg08WCzZmFAMIaAtD-EALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYVSqjPcL7QbcIQUfwOBJpc6fITut3bzHejThgwct5Yg08WCzZmFAMIaAtD-EALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Bluetooth RF Antenna</td>
+            <td>3.08 dBi gain, Frequency range 2.4 GHz - 2.483 GHz</td>
+            <td>1</td>
+            <td>$1.69</td>
+            <td>$1.69</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/pulse-electronics/W3008G/5436007?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-5436007_sig-Cj0KCQjwudexBhDKARIsAI-GWYWMlsEy0m-lsuAUuMRK943MyjWpPyFa_r4ywZGYEkNIajNboZg5Nf4aAq35EALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYWMlsEy0m-lsuAUuMRK943MyjWpPyFa_r4ywZGYEkNIajNboZg5Nf4aAq35EALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R1</td>
+            <td>1k&#937</td>
+            <td>6</td>
+            <td>$0.10</td>
+            <td>$0.60</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0603FR-131KP/21285521?utm_adgroup=Yageo&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Supplier_Yageo&utm_term=&utm_content=Yageo&utm_id=go_cmp-17816160916_adg-_ad-__dev-c_ext-_prd-21285521_sig-Cj0KCQjwudexBhDKARIsAI-GWYXnEUl-2hvUn1uan0hA8fTHDzgIJSW0PgQh3zN2J_JRFxgJ3M2LoI0aAsgcEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYXnEUl-2hvUn1uan0hA8fTHDzgIJSW0PgQh3zN2J_JRFxgJ3M2LoI0aAsgcEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R2</td>
+            <td>12k&#937</td>
+            <td>3</td>
+            <td>$0.10</td>
+            <td>$0.30</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0402FR-0712KL/726532">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R3</td>
+            <td>5k&#937</td>
+            <td>2</td>
+            <td>$0.17</td>
+            <td>$0.34</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RT0603BRE075KL/7708365">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R4</td>
+            <td>1.2k&#937</td>
+            <td>4</td>
+            <td>$0.10</td>
+            <td>$0.40</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC1206FR-071K2L/731358?utm_adgroup=Yageo&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Supplier_Yageo&utm_term=&utm_content=Yageo&utm_id=go_cmp-17816160916_adg-_ad-__dev-c_ext-_prd-731358_sig-Cj0KCQjwudexBhDKARIsAI-GWYVMALBm53u3_r9ZBu3mVAXR0CK1ALG9D6VRDeUInHMRWblWW4tkFYAaAkTFEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYVMALBm53u3_r9ZBu3mVAXR0CK1ALG9D6VRDeUInHMRWblWW4tkFYAaAkTFEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R5</td>
+            <td>14k&#937</td>
+            <td>1</td>
+            <td>$0.10</td>
+            <td>$0.10</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0402FR-0714KL/726540">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R6</td>
+            <td>1.5k&#937</td>
+            <td>8</td>
+            <td>$0.10</td>
+            <td>$0.80</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC1206FR-071K5L/731388?utm_adgroup=Yageo&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Supplier_Yageo&utm_term=&utm_content=Yageo&utm_id=go_cmp-17816160916_adg-_ad-__dev-c_ext-_prd-731388_sig-Cj0KCQjwudexBhDKARIsAI-GWYVkNvlFs3TEdWHF2afgTVeGYd4IZo1H1ZfIgtqlp15_AvVghL3xMfwaAhJNEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYVkNvlFs3TEdWHF2afgTVeGYd4IZo1H1ZfIgtqlp15_AvVghL3xMfwaAhJNEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R7</td>
+            <td>400&#937</td>
+            <td>2</td>
+            <td>$0.33</td>
+            <td>$0.66</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RT1206BRD07400RL/5936956">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R8</td>
+            <td>4.3k&#937</td>
+            <td>1</td>
+            <td>$0.10</td>
+            <td>$0.10</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERJ-3EKF4301V/1746409">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R9</td>
+            <td>7k&#937</td>
+            <td>1</td>
+            <td>$0.01618</td>
+            <td>$0.03</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/vishay-dale/CRCW08057K00JNTA/5076012">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R10</td>
+            <td>7.5&#937</td>
+            <td>1</td>
+            <td>$0.10</td>
+            <td>$0.10</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0603FR-077K5L/727366">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R11</td>
+            <td>2k&#937</td>
+            <td>1</td>
+            <td>$0.10</td>
+            <td>$0.10</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0402FR-072KL/2827565">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R12</td>
+            <td>60&#937</td>
+            <td>1</td>
+            <td>$0.71</td>
+            <td>$0.71</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/vishay-dale/CRCW120660R0KNEAIF/5078047">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R13</td>
+            <td>860&#937</td>
+            <td>2</td>
+            <td>$0.285</td>
+            <td>$0.57</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/vishay-dale-thin-film/PTN1206E8560BST1/2282651">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R14</td>
+            <td>430&#937</td>
+            <td>4</td>
+            <td>$0.10</td>
+            <td>$0.40</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0402JR-07430RL/726478">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>R15</td>
+            <td>3k&#937</td>
+            <td>1</td>
+            <td>$0.10</td>
+            <td>$0.10</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/yageo/RC0402FR-073KL/2827586">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Capacitors</td>
+            <td>Capacitance values unavailable, but functions may include: analog signal filtering, voltage regulating, power storage for low power operation, stabilizing clock oscillators, etc.</td>
+            <td>14</td>
+            <td>$0.10 (estimate)</td>
+            <td>$1.40</td>
+            <td>
+              <a href="https://www.digikey.com">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Diode</td>
+            <td>Schottky barrier diode. 400 mV forward voltage.</td>
+            <td>5</td>
+            <td>$0.42</td>
+            <td>$2.10</td>
+            <td>
+              <a href="https://www.digikey.com/en/products/detail/rohm-semiconductor/KDZVTR3.3B/10414163?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Product_Medium%20ROAS%20Categories&utm_term=&utm_content=&utm_id=go_cmp-20223376311_adg-_ad-__dev-c_ext-_prd-10414163_sig-Cj0KCQjwudexBhDKARIsAI-GWYXC8k5npgoC7eMLHr-mqNrLzS7GmoN13bePv0p4837lWbd0YzYS8FQaAjULEALw_wcB&gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYXC8k5npgoC7eMLHr-mqNrLzS7GmoN13bePv0p4837lWbd0YzYS8FQaAjULEALw_wcB">
+                www.digikey.com
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Earpads</td>
+            <td>Non-electrical: adds comfort and grip</td>
+            <td>1</td>
+            <td>$1.31 (pair)</td>
+            <td>$1.31</td>
+            <td>
+              <a href="https://www.aliexpress.us/item/2255800945381332.html?src=google&src=google&albch=shopping&acnt=708-803-3821&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=19623912707&albag=&trgt=&crea=en2255800945381332&netw=x&device=c&albpg=&albpd=en2255800945381332&gad_source=1&gclid=CjwKCAjw3NyxBhBmEiwAyofDYfbeFHLMudQWlyvp3xS7wh0rUJOyormWX1a74DaAef5oVLiHRICECRoC5PsQAvD_BwE&gclsrc=aw.ds&aff_fcid=227c8bbfab8f45688c57a332da9eb54c-1714896304334-08740-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=227c8bbfab8f45688c57a332da9eb54c-1714896304334-08740-UneMJZVf&terminal_id=24f1993106a9466eabc8ef4ff7542dab&afSmartRedirect=y&gatewayAdapt=glo2usa">
+                www.aliexpress.us
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Foam Adhesive</td>
+            <td>Non-electrical: holds battery in place</td>
+            <td>1</td>
+            <td>$0.99</td>
+            <td>$0.99</td>
+            <td>
+              <a href="https://www.michaels.com/product/9-x-12-adhesive-foam-sheet-by-creatology-10032002?srsltid=AfmBOorBPt0XRMpRc2ILJIDHKyYBJC_UtTLpKOMqLqm8kIcuyci3PZaXVIM">
+                www.michaels.com
+              </a>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4">Total cost</th>
+            <td scope="row" colspan="2">$27.17</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   </section>
 
   <section id="reassembly">
     <p class="section__text__p1">Now it's time for</p>
     <h1 class="title">Reassembly</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon email-icon"
-        >
-        <p><a href="mailto:kjbutler385@gmail.com">kjbutler385@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        >
-        <p><a href="https://www.linkedin.com/in/kj-butler/">LinkedIn</a></p>
+    <div class="photo-journal-details-container">
+      <div class="product-containers">
+        <div class="article-container">
+          <article>
+            <div class="photo-container ">
+              <img 
+                src="./photo-journal/1-front_box.jpeg"
+                alt="Unopened box (front)"
+                class="image" 
+              />
+              <div class="project-title">
+                <p>Unopened box (front)</p>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
